@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="showing_saved_favourites_only">Showing saved favourites only</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="name">Name</string>
+    <string name="status">Status</string>
+    <string name="species">Species</string>
+    <string name="sort_by">Sort by</string>
+    <string name="gender">Gender</string>
+    <string name="show">Show</string>
+    <string name="favourites">Favourites</string>
+    <string name="filters">Filters</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="genderless">Genderless</string>
+    <string name="unknown">Unknown</string>
+    <string name="alive">Alive</string>
+    <string name="dead">Dead</string>
+    <string name="all">All</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="no_saved_favourites">No saved favourites.</string>
+    <string name="no_characters_found">No characters found.</string>
+    <string name="try_again">Try again</string>
+    <string name="all_characters_loaded">All characters loaded!</string>
+</resources>

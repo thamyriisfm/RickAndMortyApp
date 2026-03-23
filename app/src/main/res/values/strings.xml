@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">RickAndMortyApp</string>
+    <string name="search_label" tools:keep="@string/search_label">Search Character</string>
+    <string name="no_characters_found">No characters found.</string>
+    <string name="all_characters_loaded">All characters loaded!</string>
+    <string name="favourites">Favourites</string>
+    <string name="rick_morty">Rick And Morty></string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="filters">Filters</string>
+    <string name="no_favourites_saved" tools:keep="@string/no_favourites_saved">No favourites saved.</string>
+    <string name="show">Show</string>
+    <string name="gender">Gender</string>
+    <string name="order_by" tools:keep="@string/order_by">Order by</string>
+    <string name="name">Name</string>
+    <string name="status">Status</string>
+    <string name="specie">Specie</string>
+    <string name="episodes">Episodes</string>
+    <string name="origin">Origin</string>
+    <string name="location">Location</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="all">All</string>
+    <string name="unknown">Unknown</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="showing_saved_favourites_only">Showing saved favourites only</string>
+    <string name="back">Back</string>
+    <string name="add_to_favourites">Add to favourites</string>
+    <string name="try_again">Try again</string>
+
+</resources>
