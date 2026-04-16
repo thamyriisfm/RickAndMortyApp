@@ -1,6 +1,7 @@
 package com.example.rickandmortyapp.extensions
 
 import com.example.rickandmortyapp.data.model.CharacterRaM
+import com.example.rickandmortyapp.data.model.Location
 import com.example.rickandmortyapp.utils.EMPTY_STRING
 import com.example.rickandmortycore.coreUi.model.CharacterDisplayModel
 
@@ -22,5 +23,7 @@ fun CharacterDisplayModel.toCharacterRaM() = CharacterRaM(
     status = status,
     species = species,
     gender = gender,
+    origin = Location(origin, EMPTY_STRING),
+    location = Location(location, EMPTY_STRING),
     image = image
 )
