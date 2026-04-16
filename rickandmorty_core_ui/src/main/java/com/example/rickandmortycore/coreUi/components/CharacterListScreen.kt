@@ -25,6 +25,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -38,6 +39,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.rickandmortyapp.core.ui.R
 import com.example.rickandmortycore.coreUi.model.CharacterDisplayModel
@@ -222,5 +224,90 @@ fun CharacterListScreen(
             onFilterChange = { onFilterChange(it) },
             onDismiss = { showFilterSheet = false }
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun CharacterListScreenPreview() {
+    MaterialTheme {
+        Surface {
+            CharacterListScreen(
+                characters = listOf(
+                    CharacterDisplayModel(
+                        id = 1,
+                        name = "Rick Sanchez",
+                        status = "Alive",
+                        species = "Human",
+                        image = ""
+                    ),
+                    CharacterDisplayModel(
+                        id = 2,
+                        name = "Morty Smith",
+                        status = "Alive",
+                        species = "Human",
+                        image = ""
+                    )
+                ),
+                isLoading = false,
+                isEmpty = false,
+                errorMessage = null,
+                searchQuery = "",
+                onSearchQueryChange = {},
+                onCharacterClicked = {},
+                filter = CharacterFilter()
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun CharacterListScreenLoadingPreview() {
+    MaterialTheme {
+        Surface {
+            CharacterListScreen(
+                isLoading = true,
+                isEmpty = false,
+                errorMessage = null,
+                searchQuery = "",
+                onSearchQueryChange = {},
+                onCharacterClicked = {}
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun CharacterListScreenEmptyPreview() {
+    MaterialTheme {
+        Surface {
+            CharacterListScreen(
+                isLoading = false,
+                isEmpty = true,
+                errorMessage = null,
+                searchQuery = "",
+                onSearchQueryChange = {},
+                onCharacterClicked = {}
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun CharacterListScreenErrorPreview() {
+    MaterialTheme {
+        Surface {
+            CharacterListScreen(
+                isLoading = false,
+                isEmpty = false,
+                errorMessage = "An error occurred",
+                searchQuery = "",
+                onSearchQueryChange = {},
+                onCharacterClicked = {}
+            )
+        }
     }
 }
